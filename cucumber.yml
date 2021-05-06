@@ -1,3 +1,4 @@
-default: --no-source --color --publish-quiet -p pretty -p allure
+default: --no-source --color --publish-quiet -p pretty -p allure -p html
 pretty: --format pretty
+html: --format html --out=reports/html/cucumber-jornada.html
 allure: --format AllureCucumber::CucumberFormatter --out reports/allure-results
