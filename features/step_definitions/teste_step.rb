@@ -13,6 +13,7 @@ end
 
 Quando("realizar o request de criação") do
    @request = QasDockGem::RequestsAPI.new.execute_post("123", "https://run.mocky.io/v3/21bd531c-ecc7-46c1-9831-de5fe8a0b2ac", @payload, @headers)
+   log_util(@request)
 end
 
 Então("deve apresentar o code {int}") do |status_code|
