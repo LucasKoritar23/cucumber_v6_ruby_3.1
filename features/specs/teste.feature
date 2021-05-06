@@ -17,4 +17,4 @@ Funcionalidade: Criar um novo usuário na API mockada
   Cenário: Validar criação de um novo usuário na base
     Dado que possua o payload de criação de usuário
     Quando realizar o request de criação
-    Então deve apresentar o code 200
+    Então deve apresentar o code 201
